@@ -3,6 +3,9 @@ from typing import Optional
 from schemas import ScoutOutput, ParserOutput, UnderwriteOutput
 from agents.scout import MarketScout
 from agents.parser import DocParser
+import fastapi
+import requests
+from bs4 import BeautifulSoup
 from agents.underwriter import Underwriter
 from storage import Store
 
