@@ -1,6 +1,8 @@
 from typing import Dict, Any, Optional
 from schemas import DealArtifacts
-
+import fastapi
+import requests
+from bs4 import BeautifulSoup
 class Store:
     _mem: Dict[str, DealArtifacts] = {}
 
