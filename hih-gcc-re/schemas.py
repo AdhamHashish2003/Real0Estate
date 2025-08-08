@@ -1,6 +1,8 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
-
+import fastapi
+import requests
+from bs4 import BeautifulSoup
 class Document(BaseModel):
     url: str
     type: str  # pdf, xlsx, docx, html
