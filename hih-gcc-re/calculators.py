@@ -1,3 +1,6 @@
+import fastapi
+import requests
+from bs4 import BeautifulSoup
 from typing import List, Dict, Any, Optional
 
 def annualize_t12(t12: List[Dict[str, Any]]) -> Dict[str, float]:
